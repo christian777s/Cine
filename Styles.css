@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans';
+    background-color: #eaeaea;
+    margin-right: 1%;
+}
+header{
+    
+    text-align: center;
+    padding: 25px 0;
+}
+
+nav{
+   
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+}
+
+nav a{
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    margin: 0 30px;
+    padding: 5px 15px;
+    border-radius: 30px;
+}
+nav a:hover{
+    background-color: #929292;
+    color: #fff;
+}
+.Encabezado_Imagen{
+    background-image: url(IMAGENES/Portada02.jpeg);
+    height: 500px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.Encabezado_Imagen p{
+    font-size: 20px;
+}
+.Encabezado_Imagen h1{
+    font-size: 50px;
+    padding: 20px 0;
+}
+.Slider{
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+}
+.Slider ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: cambio 20s infinite;
+}
+.Slider li{
+    width: 100%;
+    list-style: none;
+}
+.Slider img{
+    width: 100%;
+
+}
+
+@keyframes cambio{
+    0% {margin-left: 0;}
+    20% {margin-left:0}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+}
+
+.ImgSocio{
+    width: 500px;
+    height: 320px;
+    border-radius: 20px;
+    margin: 0%;
+}
+
+.container{
+    width: 84%;
+    margin: 0 auto;
+}
+
+footer{
+    background-color: rgb(0, 0, 0);
+    padding: 25px 0;
+    margin-top: 30px;
+    color: white;
+}
+
+.Lista_Dulceria{
+    list-style-type:square ;
+    list-style-image: url(IMAGENES/IconoDulceria.jpeg);
+    list-style-position: inside;
+}
+
+.Listas_Enlaces{
+    list-style-type:square ;
+    list-style-image: url(IMAGENES/IconoLista.jpg);
+    list-style-position:inside;
+}
+
+.Borde_Texto{
+    border: 2px solid black; 
+    padding: 5px; 
+    margin: 1%;
+    background-color: #69676730; 
+    border-radius: 5px; 
+}
+
+.Borde_Texto:hover{
+    background-color: #00000060;
+    color: #ffffff;
+    border: rgb(21, 94, 163) 10px solid;
+}
+.ImgNoticias01{
+    margin: 1%;
+    box-shadow: 0px 16px 50px rgba(0, 0, 0, 0.5); 
+}
+
+.Whatsapp{
+    width: 70px;
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+}
+
+nav{
+    background-color: rgb(0, 0, 0);
+}
+
+.imgBordes{
+    margin: 0%;
+    border-radius: 20px;
+    border-color: black;
+}
+
+.imgDulceria{
+    margin: 0%;
+    border-radius: 20px;
+    border-color: black;
+}
+
+.ContainerNav01{
+    padding: 15px;
+}
+
+.tabla_01{
+    background-color: rgba(94, 153, 26, 0.418);
+}
+
+.Facebook{
+    width: 70px;
+    position: fixed;
+    bottom: 120px;
+    right: 20px;
+}
+
+.Twitter{
+    width: 70px;
+    position: fixed;
+    bottom: 210px;
+    right: 20px;
+}

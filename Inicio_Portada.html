@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinema Perú</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Styles.css">
+    <style>
+        .news-card {
+            border: 2px solid #007bff; 
+            border-radius: 5px;
+            margin: 15px;
+            padding: 15px;
+            background-color: #f8f9fa; 
+            transition: transform 0.2s, background-color 0.3s; 
+        }
+        .news-card:hover {
+            transform: scale(1.05);
+            background-color: #007bff; 
+            color: white; 
+            cursor: pointer;
+        }
+        .hidden-content {
+            display: none;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('.news-card').click(function() {
+            $(this).find('.hidden-content').slideToggle();
+        });
+    });
+</script>
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="Inicio_Portada.html">
+            <img class="ImgLogo" src="IMAGENES/Logo01.jpg" alt="">
+        </a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="Inicio_Portada.html">INICIO</a></li>
+                <li class="nav-item"><a class="nav-link" href="Peliculas.html">PELICULAS</a></li>
+                <li class="nav-item"><a class="nav-link" href="Cines.html">CINES</a></li>
+                <li class="nav-item"><a class="nav-link" href="Dulceria.html">DULCERIA</a></li>
+                <li class="nav-item"><a class="nav-link" href="Promociones.html">PROMOCIONES</a></li>
+                <li class="nav-item"><a class="nav-link" href="Socio.html">SOCIO</a></li>
+            </ul>
+        </div>
+    </nav>
+</header><br>
+
+<div class="Slider">
+    <ul>   
+        <li><a href="Peliculas.html"><img src="IMAGENES/Imagen01.jpg" alt=""></a></li>
+        <li><a href="Peliculas.html"><img src="IMAGENES/Imagen02.jpg" alt=""></a></li>
+        <li><a href="Peliculas.html"><img src="IMAGENES/Imagen03.jpg" alt=""></a></li>
+        <li><a href="Peliculas.html"><img src="IMAGENES/Imagen04.jpg" alt=""></a></li>
+    </ul>
+</div><br>
+
+<audio controls autoplay loop>
+    <source src="MP3/MusicaPresentacion.mp3" type="audio/mpeg">
+</audio> 
+    
+<hr><br>
+<h1>NOTICIAS</h1><br>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="news-card">
+                <h5>Criticas del Joker 2</h5>
+                <img src="IMAGENES/nueva_pelicula.jpg" class="img-fluid" alt="Nueva película">
+                <div class="hidden-content">
+                    <p>Por qué Joker 2 está siendo un desastre en taquilla (pese a haber costado mucho más que la primera película)</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="news-card">
+                <h5>Premios de Cine 2024: Nominados Revelados</h5>
+                <img src="IMAGENES/premios_cine.jpg" class="img-fluid" alt="Premios de cine">
+                <div class="hidden-content">
+                    <p>Los premios de cine se llevarán a cabo el próximo mes. ¡Entérate de los nominados!</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="news-card">
+                <h5>Eres Entel, eres cine</h5>
+                <img src="IMAGENES/promo_entel.jpg" class="img-fluid" alt="Eventos especiales">
+                <div class="hidden-content">
+                    <p>Participa en nuestros eventos especiales.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<h1>Enlaces:</h1><br>
+<ul class="Listas_Enlaces">
+    <li>Ir a ultimos estrenos de <a href="Peliculas.html">PELICULAS</a></li>
+    <li>Nuestros locales de <a href="Cines.html">CINES</a></li>
+    <li>Lo mejor en <a href="Dulceria.html">DULCERIA</a></li>
+    <li>Revise nuestras promos <a href="Promociones.html">PROMOCIONES</a></li>
+    <li>Conviertete en <a href="Socio.html">SOCIO</a></li>
+    <li>Lo ultimo del cine en <a href="https://www.youtube.com/@Cinescape01/videos" target="_blank">YOUTUBE</a></li>
+    <li>Regrese al inicio clic en <a href="Inicio_Portada.html">INICIO</a></li>
+</ul>
+
+<a href="https://twitter.com/login?lang=es" target="_blank"><img src="IMAGENES/IconoTwitter.webp" class="Twitter" alt=""></a>
+<a href="https://www.facebook.com/?locale=es_LA" target="_blank"><img src="IMAGENES/IconoFacebook.webp" class="Facebook" alt=""></a>
+<a href="https://web.whatsapp.com/" target="_blank"><img src="IMAGENES/IconoWhatsapp.png" class="Whatsapp" alt=""></a>
+
+<footer>
+    <h2> Integrantes:</h2>
+    <ul>
+        <li> ■ Gherson Christian Aparcana Ramirez</li>
+        <li> ■ Fabrizio Olarte Obando</li>
+        <li> ■ Anthony Levano Bramon</li>
+    </ul><br><br>
+    <div class="container">
+        <p>• Terminos y condiciones</p><br>
+        <p>• Políticas de privacidad</p><br> 
+        <p>• Libro de reclamaciones</p><br>
+        <p>• Copyright © 2024 - CINEMA - Perú</p><br>           
+    </div>
+</footer>
+
+</body>
+</html>
